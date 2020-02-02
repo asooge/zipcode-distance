@@ -1,5 +1,6 @@
 {
   "name": "mediazact-code-test",
+  "homepage": "https://asooge.github.io/zipcode-distance",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
