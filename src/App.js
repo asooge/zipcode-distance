@@ -18,29 +18,26 @@ class App extends React.Component {
     }
   }
 
+  // onChange handler for input 1
+  // set state for input1
+  // convert input into a number then back to string to remove 0's from beginning
+  // access zipcode data and set to state.info1
   inputOne = (event) => {
-    console.log('input1 working')
     const input1 = event.target.value
     this.setState({ input1 })
     const zip1 = parseInt(input1).toString()
     this.setState({ zip1 })
-    console.log(zipcodes[zip1])
     this.setState({ info1: zipcodes[zip1] })
   }
 
+  // onChange handler for input 2
+  // same logic as input 1
   inputTwo = (event) => {
-    console.log('input1 working')
     const input2 = event.target.value
     this.setState({ input2 })
     const zip2 = parseInt(input2).toString()
     this.setState({ zip2 })
-    console.log(zipcodes[zip2])
     this.setState({ info2: zipcodes[zip2] })
-  }
-
-  componentDidMount() {
-    console.log('app loaded')
-    console.log(zipcodes['6333'])
   }
 
   render() {
