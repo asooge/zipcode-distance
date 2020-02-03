@@ -12,9 +12,9 @@ const Distance = (props) => {
     const distanceInMiles = radius * c
 
     return (
-        <div>
-            <h4>From {props.location1.LocationText} to {props.location2.LocationText}</h4>
-            <p>{distanceInMiles.toFixed(2)} Miles</p>
+        <div className='display-distance'>
+            <h2>Calculated Distance: </h2>
+            <p>{props.location1.LocationText} to {props.location2.LocationText} is {distanceInMiles.toFixed(2)} Miles</p>
         </div>
     )
 }

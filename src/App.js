@@ -3,6 +3,7 @@ import './App.css'
 import zipcodes from './csvjson.json'
 import LocationData from './LocationData'
 import Distance from './Distance'
+import Header from './Header'
 
 class App extends React.Component {
   constructor() {
@@ -45,13 +46,13 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Hi</h1>
-        <label>Enter zipcode 1: </label>
+        <Header />
+        <label>Enter zip code 1: </label>
         <input value={this.state.input1} onChange={this.inputOne}/>
         {!this.state.info1 && this.state.input1 && (<h4>please enter a valid zipcode</h4>)}
         {this.state.info1 && (<LocationData info={this.state.info1}/>)}
         <br />
-        <label>Enter zipcode 2: </label>
+        <label>Enter zip code 2: </label>
         <input value={this.state.input2} onChange={this.inputTwo}/>
         {!this.state.info2 && this.state.input2 && (<h4>please enter a valid zipcode</h4>)}
         {this.state.info2 && (<LocationData info={this.state.info2} />)}
