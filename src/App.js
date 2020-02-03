@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import zipcodes from './csvjson.json'
+import zipcodes from './zipcode-slim.json'
 import LocationData from './LocationData'
 import Distance from './Distance'
 import Header from './Header'
